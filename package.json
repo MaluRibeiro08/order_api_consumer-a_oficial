@@ -1,0 +1,20 @@
+{
+  "name": "sale_register_api_oficial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaluRibeiro08/order_api_consumer-a_oficial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaluRibeiro08/order_api_consumer-a_oficial/issues"
+  },
+  "homepage": "https://github.com/MaluRibeiro08/order_api_consumer-a_oficial#readme"
+}
