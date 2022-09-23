@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon src/main/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,12 +20,14 @@
   "homepage": "https://github.com/MaluRibeiro08/order_api_consumer-a_oficial#readme",
   "devDependencies": {
     "@types/node": "^18.7.18",
-    "typescript": "^4.8.3",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "eslint": "^8.23.0",
     "eslint-config-standard-with-typescript": "^22.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.5",
-    "eslint-plugin-promise": "^6.0.1"
+    "eslint-plugin-promise": "^6.0.1",
+    "nodemon": "^2.0.20",
+    "sucrase": "^3.27.0",
+    "typescript": "^4.8.3"
   }
 }
