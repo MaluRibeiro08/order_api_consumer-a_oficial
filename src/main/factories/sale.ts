@@ -1,6 +1,8 @@
+import { DbAddSale } from '../../data/usecases/db-add-sale'
 import { SaleController } from '../../presentation/controllers/sale'
 import { Controller } from '../../presentation/protocols/controller'
 
 export const makeSaleController = (): Controller => {
-  return new SaleController()
+  const dbAddSale = new DbAddSale()
+  return new SaleController(dbAddSale)
 }
