@@ -1,4 +1,4 @@
-import { DbAddSale } from '../../data/usecases/db-add-sale'
+import { DbAddSale } from '../../data/usecases/add-sale/db-add-sale'
 import { SaleController } from '../../presentation/controllers/sale'
 import { Controller } from '../../presentation/protocols/controller'
 

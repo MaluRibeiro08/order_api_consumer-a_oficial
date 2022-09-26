@@ -1,5 +1,5 @@
-import { Sale } from '../../domain/models/sale'
-import { AddSale, AddSaleModel } from '../../domain/usecases/add-sale'
+import { Sale } from '../../../domain/models/sale'
+import { AddSale, AddSaleModel } from '../../../domain/usecases/add-sale'
 
 export class DbAddSale implements AddSale {
   async add (saleData: AddSaleModel): Promise<Sale> {
