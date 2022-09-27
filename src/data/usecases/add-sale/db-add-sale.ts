@@ -18,7 +18,7 @@ export class DbAddSale implements AddSale {
       date_time: new Date('2022-09-26'),
       external_id: 'uuid',
       id: 123,
-      id_customer: customer.id_custmer
+      id_customer: customer.id_customer
     }
   }
 }
