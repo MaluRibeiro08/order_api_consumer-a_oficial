@@ -12,9 +12,11 @@ export class SaleMySQLRepository implements AddSaleRepository {
       id_customer: saleData.customer.id_customer
     })
 
-    // Relate items to sale in an intermediary table
+    // Relate items to sale in an intermediary table | Discount sold amount from total amount and update the value
     for (const item of saleData.items) {
       await database('tbl_sale_item').insert({ id_sale: insertedSaleId, id_item: item.id, amount: item.amount })
+      const remainingAmount = item.available_amount - item.amount
+      await database('tbl_item').update('available_amount', remainingAmount).where('id_item', item.id)
     }
 
     // Get sale inserted data and returns it
